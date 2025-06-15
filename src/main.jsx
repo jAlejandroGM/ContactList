@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+import 'remixicon/fonts/remixicon.css'
 import './index.css'  // Global styles for your application
 import { RouterProvider } from "react-router-dom";  // Import RouterProvider to use the router
 import { router } from "./routes";  // Import the router configuration
@@ -11,8 +12,7 @@ const Main = () => {
             {/* Provide global state to all components */}
             <StoreProvider> 
                 {/* Set up routing for the application */} 
-                <RouterProvider router={router}>
-                </RouterProvider>
+                <RouterProvider router={router} />
             </StoreProvider>
         </React.StrictMode>
     );
